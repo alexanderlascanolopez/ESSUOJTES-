@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ESSU OJT EVALUATION SYSTEM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Green - v4.9.0
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">https://essu.edu.ph/</a>
+        <i class="bi bi-phone-fill phone-icon"></i> Brgy. 10, Can-Avid, Philippines, 6806
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+    
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="admindashboard.html">Home</a></li>
+        
+          <li><a class="nav-link scrollto" href="createevaluator.html">Create Evaluator</a></li>
+             <li class="dropdown"><a ><span>Students</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+           
+             
+              <li><a href="registerstudents.html">Register</a></li>
+              <li><a href="ojtenrolment.html">OJT Enrollment</a></li>
+       
+            </ul>
+          </li>
+           <li><a class="nav-link scrollto " href="evalresults.html">Evaluation Results</a></li>
+              <li class="dropdown active"><a ><span>Reports</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+           
+             
+              <li><a href="students.html">Students</a></li>
+              <li><a href="ojt.html">On-the-Job Trainees</a></li>
+              <li><a href="evaluationreports.html">Evaluations</a></li>
+       
+            </ul>
+            </li>
+
+                  <li class="dropdown"><a ><span>Settings</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+           
+             
+              <li><a href="updateprofile.html">Account Settings</a></li>
+              <li><a href="newaccount.html">New Account</a></li>
+              <li><a href="odip.html">ESSU-ODIP-107a </a></li>
+       
+       
+            </ul>
+            </li>
+          <li><a class="nav-link scrollto " href="adminlogin.html">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  <main id="main">
+
+<hr>
+ <!-- ======= Breadcrumbs ======= -->
+    <!-- ======= Team Section ======= -->
+   <section id="portfolio" class="portfolio">
+    <div class="container">
+   <div class="section-title">
+          
+         
+<form  class="php-email-form">
+  <center>
+          <table>
+            <thead>
+              <tr>
+
+                <td>Search by: &nbsp;&nbsp;</td>
+                <td>    <select id ="searchby"  class="form-control">
+                            <option>Student Name</option>
+                            <option>Student Number</option>
+                           
+                            </select> </td>
+
+                            <td><input type="text" name="search" class="form-control" id="search"  placeholder = "Type here." required></td>
+
+
+
+
+
+              </tr>
+
+
+            </thead>
+
+
+
+          </table>
+</form>
+<br>
+<hr>
+
+<form  class="php-email-form">
+
+             
+<div style="overflow: scroll ;max-height: 550px; width: 100%;">
+ <div   id='printthis'>
+            <h2>List of Students</h2>
+
+                <table id="allrecords"  border = "1"class="table align-items-center mb-0">
+
+
+                  <thead class="thead-light"> </thead>
+                    <tr >
+                     
+                    
+                        <th scope="col" width = "25%" >Student Number</th>
+                        <th scope="col" width = "35%">Name</th>
+                        <th scope="col" width = "40%">Program</th>
+                
+                        
+                      
+
+                    
+                     
+                              </tr>
+                 
+                      <tbody class="customtable">
+
+                  </tbody>
+                  <caption>
+                 
+                  </caption>
+              </table>
+
+            </div>
+
+            </div>
+<br>
+
+       <table>
+              <thead>
+                <tr>
+                  <td>
+                          <div class="text-center"><button id = "print" type="submit">Print Preview</button></div>
+
+                  </td>
+
+                </tr>
+
+              </thead>
+           </table> 
+             
+            </form>
+
+</div>
+
+
+</div>
+</section>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+    
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+         Logged in as:  <strong><span id = "curruser"></span></strong><br><br>
+        &copy; Copyright <strong><span>ESSU Can-avid</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/green-free-one-page-bootstrap-template/ -->
+        Developed by:<a href="#">BSIT STUDENTS,2022</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+ <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+
+
+
+             $("#search").on("input", function(){
+
+                            var ab = $("#searchby").val();
+                            var cd = $("#search").val();
+
+                            filtersearch(ab,cd);
+
+
+                           
+                          
+
+                                });
+
+
+                         function filtersearch(a,b){
+      
+
+                        $("#allrecords").find("tr.re-list").remove();
+                        $.ajax({
+                          type: "POST",
+                          url: "php/admin_filter_students.php",
+                          dataType: "json",
+                          data: {
+                            a:a,
+                            b:b,
+                          
+                            
+                          },
+                          success: function(result){
+                            if(typeof(result.status) === 'undefined')
+                              $.each(result, function(val, key) {
+                                $("#allrecords tr:last").after("<tr class='re-list'>" + 
+                                 
+                     
+                                        "<td>" + key.studnum+ "</td>" +
+                                       "<td>" + key.fullname+ "</td>" +  
+                                       "<td>" + key.program+ "</td>" + 
+                               
+                                       
+                                  
+
+                                  "</tr>");
+
+
+
+
+                              });
+                              var rows = $('#allrecords').find('tr').length;
+                              if(rows == 1)
+                                $("#allrecords tr:last").after("<tr class='re-list'><td colspan='2'>No record to display.</td></tr>");
+                      
+                          }
+
+                        });
+    }
+
+     $('#print').click(function () {
+    printDiv();
+  
+    });
+
+
+
+    function printDiv() 
+{
+
+  var divToPrint=document.getElementById('printthis');
+
+  var newWin=window.open('','Print-Window');
+
+  newWin.document.open();
+
+  newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+
+  newWin.document.close();
+
+  setTimeout(function(){newWin.close();},10);
+
+}
+
+
+              function loadstudents(){
+      
+
+                        $("#allrecords").find("tr.re-list").remove();
+                        $.ajax({
+                          type: "POST",
+                          url: "php/students.php",
+                          dataType: "json",
+                          data: {
+                          
+                            
+                          },
+                          success: function(result){
+                            if(typeof(result.status) === 'undefined')
+                              $.each(result, function(val, key) {
+                                $("#allrecords tr:last").after("<tr class='re-list'>" + 
+                                 
+                     
+                                        "<td>" + key.studnum+ "</td>" +
+                                       "<td>" + key.fullname+ "</td>" +  
+                                       "<td>" + key.program+ "</td>" + 
+                               
+                                       
+                                  
+
+                                  "</tr>");
+
+
+
+
+                              });
+                              var rows = $('#allrecords').find('tr').length;
+                              if(rows == 1)
+                                $("#allrecords tr:last").after("<tr class='re-list'><td colspan='2'>No record to display.</td></tr>");
+                      
+                          }
+
+                        });
+    }
+
+
+
+                  function checkifloggedin(){
+
+                      let x = decodeURIComponent(document.cookie);
+
+                      if(x == "as"){
+
+
+                        window.location="index.html"
+                      }
+
+
+                      else{
+
+                         getcurrentuser(x);
+
+                      }
+
+
+                       
+
+
+
+                  }
+
+
+                 
+
+
+                        function getcurrentuser(a){
+                  
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievecurrentuser.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+                                          
+                                             $("#curruser").text(_res.a1);
+                                            
+                                      
+                                          
+                                             
+                                            } 
+                                          }
+                                        });}
+
+
+                     
+
+                               $(window).on("load",checkifloggedin()); 
+                                   $(window).on("load",loadstudents()); 
+
+
+  })
+</script>
+</body>
+</html>

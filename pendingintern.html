@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ESSU OJT EVALUATION SYSTEM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Green - v4.9.0
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">https://essu.edu.ph/</a>
+        <i class="bi bi-phone-fill phone-icon"></i> Brgy. 10, Can-Avid, Philippines, 6806
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+         
+        
+          <li><a class="nav-link scrollto active" href="evaluatordashboard.html">Dashboard</a></li>
+          
+          <li><a class= "nav-link scrollto" href="evaluatorlogin.html">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  <main id="main">
+
+<hr>
+ <!-- ======= Breadcrumbs ======= -->
+   <section id="contact" class="contact">
+      <div class="container">
+
+       
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+          
+               
+
+            <form  class="php-email-form">
+
+              <h4>Select Student</h4>
+
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                
+                  <input type="text" class="form-control" id="search" placeholder="Enter student name here..">
+                </div>
+
+<div style="overflow: scroll ;max-height: 550px; width: 100%;">
+
+                <table id="allrecords"  class="table align-items-center mb-0">
+
+
+                  <thead class="thead-light">
+                    <tr>
+                     
+                     <th>Select</th>
+                    <th hidden="">ID</th>
+                     
+              
+                        <th scope="col">Student Name</th>
+                 
+                        
+                      
+
+                    
+                     
+                              </tr>
+                  </thead>
+                      <tbody class="customtable">
+
+                  </tbody>
+                  <caption>
+                  <div id="e-paginator"></div>
+                  </caption>
+              </table>
+
+            </div>
+<br>
+
+        
+            </form>
+      
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+
+                 <form  role="form" class="php-email-form">
+
+                  <img src="images/header.jpg" class="user-image" alt="User Image" width="50%" >
+                  <br>
+                  <center>
+                  <b>  <h3></h3>STUDENT'S PERFORMANCE EVALUATION IN FIELD PRACTICE</b>
+
+                  </center>
+         
+
+
+          
+              <div class="form-group mt-3">
+                <b> <label >Name of Student: </label></b> <label id = "student"></label><br>
+                <b> <label >Evaluator: </label></b> <label id = "eval2"></label><br>
+                 <b> <label >Position/Designation: </label></b> <label id = "eposition"> </label><br>
+                   <b> <label >Contact Number: </label></b> <label id = "econnum"> </label><br>
+                     <b> <label >Company/Organization Name: </label></b> <label id = "ecomp"> </label><br>
+                       <b> <label >Address: </label></b> <label id = "eaddr"> </label>
+                 
+              </div>
+               
+
+                <div class="form-group mt-3">
+
+                  <table border = "1px" align="center">
+                    <thead border = "1px">
+                      <th width  = "70%" border = "1px">CRITERIA</th>
+                      <th align="center" width  = "15%">MAXIMUM POINTS</th>
+                      <th align="center" width  = "15%">RATING</th>
+
+                    </thead>
+
+                    <tr border = "1px">
+                       <td border = "1px"><b><label id = "tit1"></label></b></td>
+
+                    </tr>
+
+                    <tr >
+                       <td border = "1px">&nbsp;&nbsp;1.<label id = "aa1"></label></td>
+                       <td align="center"border = "1px"><label id = "aa2"></label></td>
+                        <td align="center" border = "1px"><select id ="a">
+                            <option>00</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            </select> </td>
+
+                    </tr>
+
+                     <tr>
+                     <td border = "1px">&nbsp;&nbsp;2.<label id = "bb1"></td>
+                       <td align="center" border = "1px"><label id = "bb2"></td>
+                        <td align="center" border = "1px"><select id ="b">
+                             <option>00</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            </select> </td>
+
+                    </tr>
+
+                    <tr>
+                     <td border = "1px">&nbsp;&nbsp;3.<label id = "cc1"></td>
+                       <td align="center" border = "1px"><label id = "cc2"></td>
+                        <td align="center" border = "1px"><select id ="c">
+                             <option>00</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            </select> </td>
+
+                    </tr>
+
+
+                    <tr>
+                    <td border = "1px">&nbsp;&nbsp;4.<label id = "dd1"></td>
+                       <td align="center" border = "1px"><label id = "dd2"></td>
+                        <td align="center" border = "1px"><select id ="d">
+                             <option>00</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+
+                            </select> </td>
+
+                    </tr>
+
+
+                    <tr>
+                      <td border = "1px">&nbsp;&nbsp;5.<label id = "ee1"></td>
+                       <td align="center" border = "1px"><label id = "ee2"></td>
+                        <td align="center" border = "1px"><select id ="e">
+                            <option>00</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            </select> </td>
+
+                    </tr>
+
+                      <tr>
+                       <td border = "1px">&nbsp;&nbsp;6.<label id = "ff1"></td>
+                       <td align="center" border = "1px"><label id = "ff2"></td>
+                        <td align="center" border = "1px"><select id ="f">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                           
+                            </select> </td>
+
+                    </tr>
+
+                      <tr>
+                      <td border = "1px">&nbsp;&nbsp;7.<label id = "gg1"></td>
+                       <td align="center" border = "1px"><label id = "gg2"></td>
+                        <td align="center" border = "1px"><select id ="g">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                           
+                            </select> </td>
+
+                    </tr>
+
+                      <tr>
+                       <td border = "1px">&nbsp;&nbsp;8.<label id = "hh1"></td>
+                       <td align="center" border = "1px"><label id = "hh2"></td>
+                        <td align="center" border = "1px"><select id ="h">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            </select> </td>
+
+                    </tr>
+
+                     <tr border = "1px">
+                      <td border = "1px"><b><label id = "tit2"></label></b></td>
+
+                    </tr>
+
+                        <tr>
+                     <td border = "1px">&nbsp;&nbsp;1.<label id = "a1"></td>
+                       <td align="center" border = "1px"><label id = "a2"></td>
+                        <td align="center" border = "1px"><select id ="i">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+
+
+                        <tr>
+                     <td border = "1px">&nbsp;&nbsp;2.<label id = "b1"></td>
+                       <td align="center" border = "1px"><label id = "b2"></td>
+                        <td align="center" border = "1px"><select id ="j">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                       <td border = "1px">&nbsp;&nbsp;3.<label id = "c1"></td>
+                       <td align="center" border = "1px"><label id = "c2"></td>
+                        <td align="center" border = "1px"><select id ="k">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                       <td border = "1px">&nbsp;&nbsp;4.<label id = "d1"></td>
+                       <td align="center" border = "1px"><label id = "d2"></td>
+                        <td align="center" border = "1px"><select id ="l">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                     <td border = "1px">&nbsp;&nbsp;5.<label id = "e1"></td>
+                       <td align="center" border = "1px"><label id = "e2"></td>
+                        <td align="center" border = "1px"><select id ="m">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                      <td border = "1px">&nbsp;&nbsp;6.<label id = "f1"></td>
+                       <td align="center" border = "1px"><label id = "f2"></td>
+                        <td align="center" border = "1px"><select id ="n">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                       <td border = "1px">&nbsp;&nbsp;7.<label id = "g1"></td>
+                       <td align="center" border = "1px"><label id = "g2"></td>
+                        <td align="center" border = "1px"><select id ="o">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                       <td border = "1px">&nbsp;&nbsp;8. <label id = "h1"></td>
+                       <td align="center" border = "1px"><label id = "h2"></td>
+                        <td align="center" border = "1px"><select id ="p">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                           <tr>
+                       <td border = "1px">&nbsp;&nbsp;9.<label id = "i1"></td>
+                       <td align="center" border = "1px"><label id = "i2"></td>
+                        <td align="center" border = "1px"><select id ="q">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+                            <tr>
+                      <td border = "1px">&nbsp;&nbsp;10. <label id = "j1"></td>
+                       <td align="center" border = "1px"><label id = "j2"></td>
+                        <td align="center" border = "1px"><select id ="r">
+                            <option>00</option> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          
+                            </select> </td>
+
+                    </tr>
+
+
+                     <tr border = "1px">
+                      <td border = "1px"><b>TOTAL</b></td>
+                      <td border = "1px"><label id = "fins"></label></td>
+                      <td border = "1px"><label   id = "finsum"><b>0</b></label></td>
+
+                    </tr>
+
+
+
+
+
+
+                  </table>
+
+
+                    <div class="form-group mt-3">
+                <label ><b>OTHER RELEVANT COMMENTS</b></label>
+                <textarea class="form-control" rows="7" id = "comment" required></textarea>
+              </div>
+                 
+
+
+
+
+              </div>
+
+
+            
+                   
+           <table>
+              <thead>
+                <tr>
+                  <td>
+                          <div class="text-center"><button id = "save" type="submit">Submit Evaluation</button></div>
+
+                  </td>
+
+                </tr>
+
+              </thead>
+           </table>
+
+
+              <div class="form-group mt-3">
+                <b> <label >School Year: </label></b> <label id = "sy"></label><br>
+                <b> <label >Semester: </label></b> <label id = "sm"></label><br>
+                 
+                 
+              </div>
+             
+            
+            </form>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+    
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        Logged in as:  <strong><span id = "curruser"></span></strong><br><br>
+        &copy; Copyright <strong><span>ESSU Can-avid</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/green-free-one-page-bootstrap-template/ -->
+        Developed by:<a href="#">BSIT STUDENTS,2022</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+ <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+
+
+
+              function gettitles(){
+
+                  
+              var a = 1;
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievetitle.php",
+                                          dataType: "json",
+                                            data: {
+                                              a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+
+                                          
+                                             $("#tit1").text(_res.a1);
+                                              $("#tit2").text(_res.a2);
+                                            
+                                            
+                                      
+                                          
+                                             
+                                            } 
+                                          }
+                                        });}
+
+
+
+       $("#save").click(function(){
+
+
+                        var a = $("#student").text();
+                        var b = $("#sy").text();
+                        var c = $("#sm").text();
+
+                        var d = $("#eval2").text();
+                        var e = $("#eposition").text();
+                        var f = $("#econnum").text();
+                        var g = $("#ecomp").text();
+                        var h = $("#eaddr").text();
+
+
+ 
+               
+                      
+
+                           var i = $("#a").val();
+                           var j = $("#b").val();
+                           var k = $("#c").val();
+                           var l = $("#d").val();
+                           var m = $("#e").val();
+                           var n = $("#f").val();
+                           var o = $("#g").val();
+                           var p = $("#h").val();
+                           var q = $("#i").val();
+                           var r = $("#j").val();
+                           var s = $("#k").val();
+                           var t = $("#l").val();
+                           var u = $("#m").val();
+                           var v = $("#n").val();
+                           var w = $("#o").val();
+                           var x = $("#p").val();
+                           var y = $("#q").val();
+                           var z = $("#r").val();
+
+                           var aa = $("#finsum").text();
+                           var bb = $("#comment").val();
+
+
+
+
+
+
+
+
+
+                             if (a.length < 1){
+                              alert("Please select a student!")
+                                                           
+                                              }
+                              else{
+                                        if (a.length > 0 && b.length > 0 ){
+
+
+
+                                         
+                                           saveevaluation(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,aa,bb);
+                                                
+                                              }
+                                      
+                                        else {
+
+                                              alert("Please complete missing fields!")
+                                              }
+          
+                                }    
+                                  });
+
+
+
+      function saveevaluation(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,aa,bb){
+    
+
+                  $.ajax({
+                  type: "POST",
+                  url: "php/store_evaluation.php",
+                  dataType: "json",
+                  data: {
+                      a:a,
+                      b:b,
+                      c:c,
+                      d:d,
+                      e:e,
+                      f:f,
+                      g:g,
+                      h:h,
+                      i:i,
+                      j:j,
+                      k:k,
+                      l:l,
+                      m:m,
+                      n:n,
+                      o:o,
+                      p:p,
+                      q:q,
+                      r:r,
+                      s:s,
+                      t:t,
+                      u:u,
+                      v:v,
+                      w:w,
+                      x:x,
+                      y:y,
+                      z:z,
+                      aa:aa,
+                      bb:bb,
+                  
+                            },
+                        
+                            success: function(result) {
+                            var _res = result;
+                              if (_res.status == 1){
+                                      alert("Successfully saved!");
+                                      updatestatus(a,b,c);
+                                      window.location="pendingintern.html"
+                           
+                              } else if(_res.status == 2){
+
+                                   alert("Evaluation already exist!");
+                                       
+                                   
+                          
+                           
+                              }
+                              
+                            }
+                          
+                             
+
+                          });
+                        }
+
+
+
+
+      function updatestatus(a,b,c){
+
+                  $.ajax({
+                  type: "POST",
+                  url: "php/update_evaluation_status.php",
+                  dataType: "json",
+                  data: {
+                      a:a,
+                      b:b,
+                      c:c,
+                 
+                  
+                            },
+                        
+                            success: function(result) {
+                            var _res = result;
+                              if (_res.status == 1){
+                                      window.location="pendingintern.html"
+                           
+                              } else if(_res.status == 2){
+                                    updatetempo(a,b);
+                                       
+                                   
+                          
+                           
+                              }
+                              
+                            }
+                          
+                             
+
+                          });
+                        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+     $("#allrecords").click(function(){
+  
+                         var studnum = $('input[name=chosen]:checked').val();
+                        $("#student").text(studnum);
+     
+      
+    });
+
+
+
+
+    $("#a").on("change", function(){
+                             
+                     solve();
+      
+                                });
+
+     $("#b").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#c").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#d").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#e").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#f").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#g").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#h").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#i").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#j").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#k").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#l").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#m").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#n").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#o").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#p").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#q").on("change", function(){
+                             
+                     solve();
+
+                                });
+      $("#r").on("change", function(){
+                             
+                     solve();
+
+                                });
+
+      
+
+      function solve (){
+
+                           var q1 = $("#a").val();
+                           var q2 = $("#b").val();
+                           var q3 = $("#c").val();
+                           var q4 = $("#d").val();
+                           var q5 = $("#e").val();
+                           var q6 = $("#f").val();
+                           var q7 = $("#g").val();
+                           var q8 = $("#h").val();
+                           var q9 = $("#i").val();
+                           var q10 = $("#j").val();
+                           var q11 = $("#k").val();
+                           var q12 = $("#l").val();
+                           var q13 = $("#m").val();
+                           var q14 = $("#n").val();
+                           var q15 = $("#o").val();
+                           var q16 = $("#p").val();
+                           var q17 = $("#q").val();
+                           var q18 = $("#r").val();
+                     
+                          
+
+                           var a = parseInt(q1);
+                           var b = parseInt(q2);
+                           var c = parseInt(q3);
+                           var d = parseInt(q4);
+                           var e = parseInt(q5);
+                           var f = parseInt(q6);
+                           var g = parseInt(q7);
+                           var h = parseInt(q8);
+                           var i = parseInt(q9);
+                           var j = parseInt(q10);
+                           var k = parseInt(q11);
+                           var l = parseInt(q12);
+                           var m = parseInt(q13);
+                           var n = parseInt(q14);
+                           var o = parseInt(q15);
+                           var p = parseInt(q16);
+                           var q = parseInt(q17);
+                           var r = parseInt(q18);
+
+
+
+                           var sum = parseInt(a) + parseInt(b)+ parseInt(c)+ parseInt(d)+ parseInt(e)+ parseInt(f)+ parseInt(g)+ parseInt(h)+ parseInt(i)+ parseInt(j)+ parseInt(k)+ parseInt(l)+ parseInt(m)+ parseInt(n)+ parseInt(o)+ parseInt(p)+ parseInt(q)+ parseInt(r);
+
+                                  $("#finsum").text(sum);
+      
+
+              }
+
+
+
+                   function loadstudents(a){
+                          var stat = "PENDING";
+
+                        $("#allrecords").find("tr.re-list").remove();
+                        $.ajax({
+                          type: "POST",
+                          url: "php/retrieve_current_evaluator_pending_students.php",
+                          dataType: "json",
+                          data: {
+                           a:a,
+                           stat: stat,
+                            
+                          },
+                          success: function(result){
+                            if(typeof(result.status) === 'undefined')
+                              $.each(result, function(val, key) {
+                                $("#allrecords tr:last").after("<tr class='re-list'>" + 
+                                  "<td><input type='radio' name='chosen' value='" + key.fullname + "' /></td>" +
+                                      
+                                       "<td>" + key.fullname+ "</td>" +  
+                                  
+                                       
+                                  
+
+                                  "<td></td></tr>");
+
+
+
+
+                              });
+                              var rows = $('#allrecords').find('tr').length;
+                              if(rows == 1)
+                                $("#allrecords tr:last").after("<tr class='re-list'><td colspan='2'>No record to display.</td></tr>");
+                      
+                          }
+
+                        });
+    }
+
+
+
+
+                  function checkifloggedin(){
+
+                      let x = decodeURIComponent(document.cookie);
+
+
+                      if(x == "as"){
+
+
+                        window.location="index.html"
+                      }
+
+
+                      else{
+
+                         getcurrentuser(x);
+
+                      }
+
+
+                       
+
+
+
+                  }
+
+
+                 
+
+
+                        function getcurrentuser(a){
+                 
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrieve_current_evaluator.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+
+                                          
+                                             $("#curruser").text(_res.a1);
+                                              $("#eval2").text(_res.a1);
+                                                $("#eposition").text(_res.a2);
+                                                  $("#econnum").text(_res.a3);
+                                                    $("#ecomp").text(_res.a4);
+                                                      $("#eaddr").text(_res.a5);
+                                                        $("#sy").text(_res.a6);
+                                                          $("#sm").text(_res.a7);
+                                              
+
+                                              loadstudents(_res.a1);
+                                            
+                                      
+                                          
+                                             
+                                            } 
+                                          }
+                                        });}
+
+          function retrieve(){
+
+                                          var a;
+
+                                          for(a=1;a<19;a++){
+
+                                            getquestions1(a);
+
+
+
+                                          }
+
+
+
+
+                                        }
+
+
+
+
+
+             function getquestions1(a){
+
+                                          $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievequestion.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                                                                     
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+
+                                                      if(_res.ab == 1){
+                                                        $("#aa1").text(_res.a1);
+                                                        $("#aa2").text(_res.a2);
+
+                                                      }
+
+                                                       if(_res.ab == 2){
+                                                        $("#bb1").text(_res.a1);
+                                                        $("#bb2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 3){
+                                                        $("#cc1").text(_res.a1);
+                                                        $("#cc2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 4){
+                                                        $("#dd1").text(_res.a1);
+                                                        $("#dd2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 5){
+                                                        $("#ee1").text(_res.a1);
+                                                        $("#ee2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 6){
+                                                        $("#ff1").text(_res.a1);
+                                                        $("#ff2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 7){
+                                                        $("#gg1").text(_res.a1);
+                                                        $("#gg2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 8){
+                                                        $("#hh1").text(_res.a1);
+                                                        $("#hh2").text(_res.a2);
+
+                                                      }
+
+
+
+                                                          if(_res.ab == 9){
+                                                        $("#a1").text(_res.a1);
+                                                        $("#a2").text(_res.a2);
+
+                                                      }
+
+                                                       if(_res.ab == 10){
+                                                        $("#b1").text(_res.a1);
+                                                        $("#b2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 11){
+                                                        $("#c1").text(_res.a1);
+                                                        $("#c2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 12){
+                                                        $("#d1").text(_res.a1);
+                                                        $("#d2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 13){
+                                                        $("#e1").text(_res.a1);
+                                                        $("#e2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 14){
+                                                        $("#f1").text(_res.a1);
+                                                        $("#f2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 15){
+                                                        $("#g1").text(_res.a1);
+                                                        $("#g2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 16){
+                                                        $("#h1").text(_res.a1);
+                                                        $("#h2").text(_res.a2);
+
+                                                      }
+
+                                                          if(_res.ab == 17){
+                                                        $("#i1").text(_res.a1);
+                                                        $("#i2").text(_res.a2);
+
+                                                      }
+
+                                                        if(_res.ab == 18){
+                                                        $("#j1").text(_res.a1);
+                                                        $("#j2").text(_res.a2);
+
+                                                      }
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                      
+                                          
+                                             
+                                            } 
+                                          }
+                                        });}
+                     
+
+                               $(window).on("load",checkifloggedin()); 
+                                   $(window).on("load",gettitles()); 
+                                        $(window).on("load",retrieve()); 
+
+
+  })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
