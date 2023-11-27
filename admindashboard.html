@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -64,40 +66,40 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="admindashboard.html">Home</a></li>
-        
+
           <li><a class="nav-link scrollto" href="createevaluator.html">Create Evaluator</a></li>
-             <li class="dropdown"><a ><span>Students</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a><span>Students</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-           
-             
+
+
               <li><a href="registerstudents.html">Register</a></li>
               <li><a href="ojtenrolment.html">OJT Enrollment</a></li>
-       
+
             </ul>
           </li>
-           <li><a class="nav-link scrollto" href="evalresults.html">Evaluation Results</a></li>
-              <li class="dropdown"><a ><span>Reports</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-           
-             
+          <li><a class="nav-link scrollto" href="evalresults.html">Evaluation Results</a></li>
+          <li class="dropdown"><a><span>Reports</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+
+
               <li><a href="students.html">Students</a></li>
               <li><a href="ojt.html">On-the-Job Trainees</a></li>
               <li><a href="evaluationreports.html">Evaluations</a></li>
-       
-            </ul>
-            </li>
 
-                 <li class="dropdown"><a ><span>Settings</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-           
-             
+            </ul>
+          </li>
+
+          <li class="dropdown"><a><span>Settings</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+
+
               <li><a href="updateprofile.html">Account Settings</a></li>
               <li><a href="newaccount.html">New Account</a></li>
               <li><a href="odip.html">ESSU-ODIP-107a </a></li>
-       
-       
+
+
             </ul>
-            </li>
+          </li>
           <li><a class="nav-link scrollto" href="adminlogin.html">Logout</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -111,41 +113,69 @@
 
   <main id="main">
 
-<hr>
- <!-- ======= Breadcrumbs ======= -->
+    <!-- <hr> -->
+    <!-- ======= Breadcrumbs ======= -->
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
-      <div class="container" style="background-color:#013220">
+      <div class="container">
 
-     <br><br> <br><br>
+        <!-- <br><br> <br><br> -->
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" style="background-color:#013220">
-            <div class="member" style="background-color:#013220">
-              <img src="images/stud.jfif" alt="">
-              <h1 id = "enrolled" style="color: #FFFFFF">0</h1>
-              <span style="color: #FFFFFF">Total Number of Enrolled Students</span>
-             
-            
+        <div class="row" style="display: flex;justify-content: center; gap: 5px">
+          <div class="col-lg-3 col-md-6">
+            <div class="member" style="height:95%;background-color: rgba(255, 127, 80);background-image: url('../../images/graph.png');background-size: cover;">
+              <!-- <img src="images/stud.jfif" alt=""> -->
+              <h5 style="color: #fff">Total Number of Enrolled Students</h5>
+              <!-- <span class="border" style="color: #FFFFFF">Total Number of Enrolled Students</span> -->
+              <div style="display: flex;justify-content: space-between;align-items: center;">
+                <h1 id="enrolled" style="color: #FFFFFF;">45</h1>
+                <span style="align-items: center;
+                background: #fff;
+                border-radius: 50%;
+                color: #3b7ddd;
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                width: 50px;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users align-middle"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" style="background-color:#013220">
-              <img src="images/supervise.jfif" alt="">
-              <h1 style="color: #FFFFFF" id = "supervisors">0</h1>
-              <span style="color: #FFFFFF">Total Number of registered Supervisors</span>
-             
-             
+          <div class="col-lg-3 col-md-6">
+            <div class="member" style="height:95%;background-color: rgba(255, 191, 0);background-image: url('../../images/graph.png');background-size: cover;">
+              <!-- <img src="images/graph.png" alt=""> -->
+              <h5 style="color: #FFFFFF">Total Number of registered Supervisors</h5>
+              <!-- <span style="color: #FFFFFF">Total Number of registered Supervisors</span> -->
+              <div style="display: flex;justify-content: space-between;align-items: center;">
+                <h1 id="enrolled" style="color: #FFFFFF;">45</h1>
+                <span style="align-items: center;
+                background: #fff;
+                border-radius: 50%;
+                color: #3b7ddd;
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                width: 50px;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users align-middle"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" style="background-color:#013220">
-              <img src="images/evaluation.png" alt="">
-              <h1 style="color: #FFFFFF" id = "evaluations">45</h1>
-              <span style="color: #FFFFFF">Total Number of Evaluations</span>
-            
+          <div class="col-lg-3 col-md-6">
+            <div class="member" style="height:95%;background-color: rgba(1,50,32);background-image: url('../../images/graph.png');background-size: cover;">
+              <!-- <img src="images/evaluation.png" alt=""> -->
+              <h5 style="color: #FFFFFF">Total Number of Evaluations</h5>
+              <!-- <span style="color: #FFFFFF">Total Number of Evaluations</span> -->
+              <div style="display: flex;justify-content: space-between;align-items: center;">
+                <h1 id="enrolled" style="color: #FFFFFF;">45</h1>
+                <span style="align-items: center;
+                background: #fff;
+                border-radius: 50%;
+                color: #3b7ddd;
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                width: 50px;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list align-middle"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              </div>
             </div>
           </div>
 
@@ -159,7 +189,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-    
+
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -168,7 +198,7 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-         Logged in as:  <strong><span id = "curruser"></span></strong><br><br>
+        Logged in as: <strong><span id="curruser"></span></strong><br><br>
         &copy; Copyright <strong><span>ESSU Can-avid</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
@@ -181,7 +211,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -193,172 +224,174 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
- <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Slimscroll -->
-<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-<!-- fullCalendar -->
-<script src="bower_components/moment/moment.js"></script>
-<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
-<!-- Page specific script -->
-<script>
-  $(function () {
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Slimscroll -->
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- fullCalendar -->
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
 
 
-                  function checkifloggedin(){
+      function checkifloggedin() {
 
-                      let x = decodeURIComponent(document.cookie);
+        let x = decodeURIComponent(document.cookie);
 
-                      if(x == "as"){
-
-
-                        window.location="index.html"
-                      }
+        if (x == "as") {
 
 
-                      else{
-
-                         getcurrentuser(x);
-
-                      }
+          window.location = "index.html"
+        }
 
 
-                       
+        else {
 
+          getcurrentuser(x);
 
-
-                  }
-
-
-                 
-
-
-                        function getcurrentuser(a){
-                  
-
-                                        $.ajax({
-                                          type: "POST",
-                                          url: "php/retrievecurrentuser.php",
-                                          dataType: "json",
-                                            data: {
-                                              a:a, 
-                                             
-                                             
-                                         
-                                            },
-                                          success: function(result){
-                                            var _res = result;
-                                            if(_res.status == 1){
-                                          
-                                             $("#curruser").text(_res.a1);
-                                            
-                                      
-                                          
-                                             
-                                            } 
-                                          }
-                                        });}
+        }
 
 
 
 
 
-         function countenrolled(){
-                              var type = "enrolled";
 
-                            $.ajax({
-                              type: "POST",
-                              url: "php/count.php",
-                              dataType: "json",
-                                data: {
-                               
-                                 type,
-                             
-                                },
-                              success: function(result){
-                                var _res = result;
-                                if(_res.status == 1){
-                                   $("#enrolled").text(_res.unid);
-
-                                  
-                                } 
-                              }
-                            });
-
-                          }
-
-
-
-                                function countsupervisors(){
-                              var type = "supervisors";
-
-                            $.ajax({
-                              type: "POST",
-                              url: "php/count.php",
-                              dataType: "json",
-                                data: {
-                               
-                                 type,
-                             
-                                },
-                              success: function(result){
-                                var _res = result;
-                                if(_res.status == 1){
-                                   $("#supervisors").text(_res.unid);
-
-                                  
-                                } 
-                              }
-                            });
-
-                          }
+      }
 
 
 
 
-                                function countevaluations(){
-                              var type = "evaluations";
 
-                            $.ajax({
-                              type: "POST",
-                              url: "php/count.php",
-                              dataType: "json",
-                                data: {
-                               
-                                 type,
-                             
-                                },
-                              success: function(result){
-                                var _res = result;
-                                if(_res.status == 1){
-                                   $("#evaluations").text(_res.unid);
-
-                                  
-                                } 
-                              }
-                            });
-
-                          }
+      function getcurrentuser(a) {
 
 
-                     
+        $.ajax({
+          type: "POST",
+          url: "php/retrievecurrentuser.php",
+          dataType: "json",
+          data: {
+            a: a,
 
-                               $(window).on("load",checkifloggedin()); 
-                                $(window).on("load",countenrolled()); 
-                                 $(window).on("load",countsupervisors()); 
-                                  $(window).on("load",countevaluations()); 
 
 
-  })
-</script>
+          },
+          success: function (result) {
+            var _res = result;
+            if (_res.status == 1) {
+
+              $("#curruser").text(_res.a1);
+
+
+
+
+            }
+          }
+        });
+      }
+
+
+
+
+
+      function countenrolled() {
+        var type = "enrolled";
+
+        $.ajax({
+          type: "POST",
+          url: "php/count.php",
+          dataType: "json",
+          data: {
+
+            type,
+
+          },
+          success: function (result) {
+            var _res = result;
+            if (_res.status == 1) {
+              $("#enrolled").text(_res.unid);
+
+
+            }
+          }
+        });
+
+      }
+
+
+
+      function countsupervisors() {
+        var type = "supervisors";
+
+        $.ajax({
+          type: "POST",
+          url: "php/count.php",
+          dataType: "json",
+          data: {
+
+            type,
+
+          },
+          success: function (result) {
+            var _res = result;
+            if (_res.status == 1) {
+              $("#supervisors").text(_res.unid);
+
+
+            }
+          }
+        });
+
+      }
+
+
+
+
+      function countevaluations() {
+        var type = "evaluations";
+
+        $.ajax({
+          type: "POST",
+          url: "php/count.php",
+          dataType: "json",
+          data: {
+
+            type,
+
+          },
+          success: function (result) {
+            var _res = result;
+            if (_res.status == 1) {
+              $("#evaluations").text(_res.unid);
+
+
+            }
+          }
+        });
+
+      }
+
+
+
+
+      $(window).on("load", checkifloggedin());
+      $(window).on("load", countenrolled());
+      $(window).on("load", countsupervisors());
+      $(window).on("load", countevaluations());
+
+
+    })
+  </script>
 </body>
+
 </html>

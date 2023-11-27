@@ -556,7 +556,11 @@ section {
 }
 
 .section-bg {
-  background-color: #f8fcf9;
+  height: 85vh;
+  background-size: cover;
+  background-image: url('../../images/homepage_image.jpg');
+  background-color: rgba(194, 252, 231, 0.4);
+  background-blend-mode: overlay;
 }
 
 .section-title {
@@ -1123,7 +1127,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team .member {
-  text-align: center;
+  text-align: start;
   margin-bottom: 20px;
   box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
   padding: 30px 20px;
